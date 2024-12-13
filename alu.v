@@ -21,6 +21,6 @@ FA fa6(s[5],c[5],y[5],acc[5],c[4]);
 FA fa7(s[6],c[6],y[6],acc[6],c[5]);
 FA fa8(s[7],c[7],y[7],acc[7],c[6]);
 
-assign bus = eu ? s : 8'b00000000;
+assign bus = eu ? s : 8'bzzzzzzzz;
 
 endmodule
