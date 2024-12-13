@@ -34,5 +34,5 @@ d_ff q2(q[2],s[2],clk,clr);
 d_ff q3(q[3],s[3],clk,clr);
 d_ff q4(q[4],s[4],clk,clr);
 
-assign bus = Ep ? q : 4'b0000; 
+assign bus = Ep ? q : 4'bzzzz; 
 endmodule
