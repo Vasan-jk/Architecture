@@ -10,7 +10,7 @@ d_ff d2(bus[1],y[1],clk,clr);
 d_ff d3(bus[2],y[2],clk,clr);
 d_ff d4(bus[3],y[3],clk,clr);
 	 
-	 assign y=lm?d:4'b0000; 
+	 assign y=lm?d:4'bzzzz; 
 
 
 endmodule
