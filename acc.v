@@ -6,7 +6,7 @@ input la, ea, clk, clr;
 wire [7:0] y;
 wire [7:0] d;
 
-assign y = la ? 8'b00000000 : i;
+assign y = la ? 8'bzzzzzzzz : i;
 
 d_ff d1(d[0], y[0], clk, clr);
 d_ff d2(d[1], y[1], clk, clr);
@@ -19,7 +19,7 @@ d_ff d8(d[7], y[7], clk, clr);
 
 assign s = d;
 
-assign bus = ea ? d : 8'b00000000;
+assign bus = ea ? d : 8'bzzzzzzzz;
 
 endmodule
 
