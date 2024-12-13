@@ -19,9 +19,9 @@ module ir(bus, ctrl, i, clk, clr, li, ei);
     assign ctrl[2] = z[6]; 
     assign ctrl[3] = z[7]; 
     
-    assign bus[3:0] = ei ? z[3:0] : 4'b0000; 
+    assign bus[3:0] = ei ? z[3:0] : 4'bzzzz; 
 
-    assign y = li ? i : 8'b00000000;
+    assign y = li ? i : 8'bzzzzzzzz;
     
 endmodule
 
